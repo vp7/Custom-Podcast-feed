@@ -72,7 +72,7 @@ $description = $item->description;?>
     <description> <?php echo $item->description; ?> </description>
 	<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"><![CDATA[<p><a href="<?php echo $item->enclosure['url']; ?>">Download</a><br />
 <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
-<audio preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="<?php echo $item->enclosure['url']; ?>"/><a href="<?php echo $item->enclosure['url']; ?>"><?php echo $item->title; ?></a></audio></p><p><a href="<?php echo $item->enclosure['url']; ?>?dl=1"><img src="https://material.io/guidelines/static/spec/images/callouts/download.svg" alt="Download" border="1" /></a><img src="https://placeholdit.imgix.net/~text?h=43&amp;&amp;txt=<?php echo $item->title;?>&amp;bg=%234ab866&amp;txtsize=17&amp;txtclr=7" border="1" /></p>
+<audio preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="<?php echo $item->enclosure['url']; ?>"/><a href="<?php echo $item->enclosure['url']; ?>"><?php echo $item->title; ?></a></audio></p><p><a href="<?php echo $item->enclosure['url']; ?>?dl=1"><img src="<?php echo $img ; ?>" alt="Download" border="1" height="43" width="43" /></a><img src="https://placeholdit.imgix.net/~text?h=43&amp;&amp;txt=<?php echo $item->title;?>&amp;bg=%234ab866&amp;txtsize=17&amp;txtclr=7" border="1" /></p>
 ]]></content:encoded>
 <pubDate><?php echo $item->$description;?> </pubDate>
    <media:content url="<?php echo $img;?>" medium="image"></media:content> 
